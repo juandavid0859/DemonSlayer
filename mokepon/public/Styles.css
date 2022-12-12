@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@300&display=swap');
+body {
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #FF9F29;
+}
+
+.title {
+    color: #000000;
+    font-size: 40px;
+
+}
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subtitulo {
+    color: #1A4D2E;
+    font-size: 32px;
+
+}
+
+.tarjetas, .tarjetas-ataques{
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta-de-mokepon{
+    width: 180px;
+    height: 254px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid #FAF3E3;
+    border-radius: 20px;
+    color: #1A4D2E;
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 20px;
+}
+.tarjeta-de-mokepon img {
+    width: 120px;
+}
+
+
+#boton-mascotas {
+    width: 180px;
+    height: 80px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #FAF3E3;
+    color: #1A4D2E;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+}
+
+input{
+    display: none;
+}
+
+
+input:checked + label {
+    background-color: #C69749;
+}
+
+#seleccionar-ataque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque{
+    background-color: #FAF3E3;
+    width: 90px;
+    height: 60px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: #1A4D2E;
+    border-color: transparent;
+    font-family: 'Luckiest Guy', cursive;
+    border: 1px solid #000000;
+}
+
+#mensajes {
+    width: 190px;
+    height: 50px;
+    background: #FAF3E3;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: #1A4D2E;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+#boton-reiniciar{
+    border: none;
+    color: #1A4D2E;
+    font-family: 'Luckiest Guy', cursive;
+    border: 1px solid #000000;
+    background: #FAF3E3;
+    border-radius: 20px;
+    width: 89px;
+    height: 29px;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    color: #1A4D2E;
+    margin-top: 20px;
+    
+}
+
+.ataques-jugador{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    background-color: #FAF3E3;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    color: #1A4D2E;
+    border-color: transparent;
+    font-family: 'Luckiest Guy', cursive;
+    border: 1px solid #000000;
+    margin: 4px;
+
+}
+#mascota-jugador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 560px){
+    .tarjetas, .tarjetas-ataques{
+        flex-direction: column;
+    }   
+}
+
+@media (max-width: 300px){
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }   
+}
